@@ -11,10 +11,10 @@ variable "location" {
   description = "The Azure Region in which all resources will be provisioned in"
 }
 
-variable "kubernetes_version" {
-  default     = "1.16.10"
-  description = "The version of Kubernetes you want deployed to your cluster. Please reference the command: az aks get-versions --location eastus -o table"
-}
+# variable "kubernetes_version" {
+#   default     = "1.16.10"
+#   description = "The version of Kubernetes you want deployed to your cluster. Please reference the command: az aks get-versions --location eastus -o table"
+# }
 
 # variable "client_id" {
 #   description = "The Client ID for the Service Principal to use for this Managed Kubernetes Cluster"

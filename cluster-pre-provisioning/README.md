@@ -137,7 +137,7 @@ az network firewall network-rule create -g $RG -f $FWNAME --collection-name 'aks
 az network firewall application-rule create -g $RG -f $FWNAME --collection-name 'aksfwar' -n 'fqdn' --source-addresses '*' --protocols 'http=80' 'https=443' --fqdn-tags "AzureKubernetesService" --action allow --priority 100
 
 # Single F/W Rule
-az network firewall application-rule create -g $RG -f $FWNAME \
+az network firewall application-rule update -g $RG -f $FWNAME \
  --collection-name 'AKS' \
  --action allow \
  --priority 200 \
